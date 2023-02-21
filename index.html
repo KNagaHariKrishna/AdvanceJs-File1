@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Total Price</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div>
+    <input type="text" id="cell0">
+    <input type="text"  id="cell1">
+    <input type="text" id="cell2">
+    <button onclick="editRow();edit();">Edit Row</button><br><br>
+    <table id="table">
+      <tr>
+      <thead>
+        <th>S.no</th>
+        <th>
+          Item Name
+        </th>
+        <th>Item Price</th>
+      </thead>
+      </tr>
+        <tbody>
+          <tr>
+          <td>1</td>
+          <td>pencil</td>
+          <td data-ns-test="prices" id='price'>10</td>
+            </tr>
+                    <tr>
+          <td>2</td>
+          <td>A4 sheets</td>
+          <td data-ns-test="prices" id='price'>10</td>
+            </tr>
+                    <tr>
+          <td>3</td>
+          <td>wallet</td>
+          <td data-ns-test="prices" id='price'>10</td>
+            </tr>
+                    <tr>
+          <td>4</td>
+          <td>Ice cream</td>
+          <td data-ns-test="prices" id='price'>10</td>
+            </tr>
+                    <tr>
+          <td>5</td>
+          <td>Coffee powder</td>
+          <td data-ns-test="prices" id='price'>10</td>
+            </tr>
+            <tr data-ns-test="grandTotal"></tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>grandTotal</td>
+            <td>=</td>
+            <td id="ans">50</td>
+          </tr>
+          
+        </tfoot>
+    </table>  
+    
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
